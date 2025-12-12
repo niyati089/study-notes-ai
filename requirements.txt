@@ -1,0 +1,15 @@
+streamlit>=1.20
+python-dotenv
+pypdf
+sentence-transformers
+faiss-cpu
+groq
+requests
+reportlab
+numpy
+scikit-learn
+nltk
+gTTS
+sounddevice         # optional: microphone capture (for voice input)
+speechrecognition   # optional: speech-to-text
+
