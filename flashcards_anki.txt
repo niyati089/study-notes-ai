@@ -1,0 +1,388 @@
+Define: Answer	b) They produce high-quality and detailed images.	
+What are d) They?	easy to use.	
+What are c) They?	stable and predictable.	
+What are a) They?	fast and efficient.	
+What is What?	the main advantage of Diffusion Models?	
+Define: Answer	a) To generate new images.	
+What is What?	the purpose of the generator in a GAN?	
+Define: Answer	a) Zero-shot uses pre-trained knowledge, while few-shot uses examples.	
+What is What?	the main difference between zero-shot and few-shot prompting?	
+What is * **Diffusion Model architecture**: x_t = x_{t-1} + \epsilon \* \sigma^{-1} (x_{t-1} - x_{t-2}), where x_t?	the output at time t, \epsilon is the noise vector, and \sigma is the standard deviation.	
+What is * **GAN architecture**: G(z) = x, where G?	the generator and z is the input noise vector.	
+What are **Equations/Formulas**
+
+* **Transformer architecture**: Q = K^T \* V, where Q, K, and V?	the query, key, and value vectors.	
+Define: * **Diffusion Model**	Generate a new image of a landscape.	
+Define: * **GAN**	Generate a new image of a cat.	
+Define: * **LLM**	Translate "Hello" into Spanish.	
+Define: * **Chain-of-thought prompting**	A shop had 30 apples, then bought 20 more.	
+Define: * **Few-shot prompting**	Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?	
+Define: **Examples**
+
+* **Zero-shot prompting**	Translate "Good morning" into French.	
+Define: * **Diffusion Model**	A type of Generative AI model based on denoising diffusion process.	
+Define: * **GAN (Generative Adversarial Network)**	A type of Generative AI model that consists of two neural networks trained together.	
+Define: * **LLM (Large Language Model)**	A type of Generative AI model based on Transformer architecture.	
+Define: * **Chain-of-thought**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot**	The user provides a few examples showing how the task should be done.	
+What is **Definitions**
+
+* **Zero-shot**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: * **Code Assistants (Copilot)**	Analyze code context, predict next lines or entire functions, fix errors and generate documentation.	
+Define: * **Meeting Assistants (Zoom AI)**	STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.	
+Define: * **Speech Systems (TTS – Text-to-Speech)**	Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.	
+Define: * **Speech Systems (STT – Speech-to-Text)**	Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.	
+Define: * **Image Captioning Systems**	Image → vision encoder extracts features, text decoder converts visual features to words.	
+Define: * **RAG (Retrieval-Augmented Generation) Systems**	Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.	
+Define: * **Diffusion Models**	Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.	
+Define: * **GANs (Generative Adversarial Networks)**	Consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLMs (Large Language Models)**	Based on Transformer architecture, uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought prompting**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot prompting**	The user provides a few examples showing how the task should be done.	
+What is **Key Points**
+
+* **Zero-shot prompting**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: **Study Summary	Generative AI**
+
+**Introduction**
+
+Generative AI refers to a subset of artificial intelligence that enables machines to generate new, original content, such as text, images, or audio.	
+Define: * **Meeting assistant**	Use speech model to transcribe speech, LLM to summarize meeting content, and embedding model to detect topics, tasks, and action items.	
+Define: * **Speech system**	Use speech encoder to recognize phonemes and words, and use decoder to generate text output.	
+Define: * **Image captioning system**	Use vision encoder to extract features from an image, and use language decoder to generate captions.	
+Define: **Examples**
+
+* **RAG system**	Convert user query into embeddings, retrieve relevant documents from a vector database, and use LLM to generate accurate answers.	
+Define: * **Code assistant**	A type of AI system that uses code-specific LLMs to analyze code context and predict next lines or entire functions.	
+Define: * **Meeting assistant**	A type of AI system that uses a combination of speech models, LLMs, and embedding models to summarize meeting content.	
+Define: * **Speech system**	A type of AI system that uses a combination of speech encoders and decoders to generate text output.	
+Define: * **Image captioning system**	A type of AI system that uses a combination of vision encoders and language decoders to generate captions.	
+Define: **Definitions**
+
+* **RAG system**	A type of AI system that uses a combination of embedding models and LLMs to generate accurate answers.	
+Define: * **Code assistants**	Use code-specific LLMs to analyze code context and predict next lines or entire functions.	
+Define: * **Meeting assistants**	Use a combination of speech models, LLMs, and embedding models to summarize meeting content.	
+Define: * **Speech systems**	Use a combination of speech encoders and decoders to generate text output.	
+Define: * **Image captioning systems**	Use a combination of vision encoders and language decoders to generate captions.	
+Define: **Key Points**
+
+* **RAG systems**	Use a combination of embedding models and LLMs to generate accurate answers.	
+Define: **Mod 4	Generative AI Applications**
+
+**Introduction**
+
+Generative AI has a wide range of applications, including image captioning, RAG systems, meeting assistants, speech systems, and code assistants.	
+Define: Answer	a) Slow generation because of many denoising steps.	
+What is What?	the main drawback of using Diffusion Models?	
+Define: Answer	a) Produces sharp, high-quality images.	
+What is What?	the main benefit of using GANs?	
+Define: Answer	b) Zero-shot uses pre-trained knowledge, few-shot uses examples.	
+What is c) Zero-shot?	used for common tasks, few-shot is used for niche tasks.	
+What is What?	the main difference between zero-shot and few-shot prompting?	
+What is * **Generator-Discriminator architecture**: G(z) → D(G(z)), where G?	the Generator and D is the Discriminator.	
+What is **Equations/ Formulas**
+
+* **Self-attention mechanism**: Q = K^T \* V, where Q?	the query, K is the key, and V is the value.	
+Define: * **Chain-of-thought prompting**	A shop had 30 apples, then bought 20 more.	
+Define: * **Few-shot prompting**	Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?	
+Define: **Examples**
+
+* **Zero-shot prompting**	Translate "Good morning" into French.	
+Define: * **Diffusion Model**	A type of AI model that uses a denoising diffusion process to generate images.	
+Define: * **GAN**	A type of AI model that consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLM**	A type of AI model that uses self-attention mechanisms to understand relationships between words.	
+Define: * **Chain-of-thought**	A reasoning process that involves breaking down a problem into smaller sub-problems and solving each one step-by-step.	
+Define: * **Few-shot learning**	The ability of a model to learn a task with only a few examples.	
+Define: **Definitions**
+
+* **Zero-shot learning**	The ability of a model to perform a task without any prior training on that task.	
+Define: * **Diffusion Models**	Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.	
+Define: * **GANs (Generative Adversarial Networks)**	Consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLMs (Large Language Models)**	Based on Transformer architecture, uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought prompting**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot prompting**	The user provides a few examples showing how the task should be done.	
+What is **Key Points**
+
+* **Zero-shot prompting**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: **Structured Study Summary**
+
+**Mod 2	Generative AI Fundamentals**
+
+**Introduction**
+
+Generative AI refers to a class of artificial intelligence models that can generate new content, such as text, images, or audio, based on a given prompt or input.	
+Define: Answer	a) Analyze code context, predict next lines or entire functions, fix errors and generate documentation.	
+What is What?	the main application of a Code Assistant?	
+Define: Answer	b) Extremely high-quality and detailed images.	
+What is What?	the main benefit of using a Diffusion Model?	
+Define: Answer	a) Zero-shot uses pre-trained knowledge, few-shot uses examples.	
+What is What?	the main difference between zero-shot and few-shot prompting?	
+Define: **Equations/Formulas**
+
+* **Self-attention layer**	Q = K^T \* V / sqrt(d)
+* **Generator**: G(z) = σ(Wz + b)
+* **Discriminator**: D(x) = σ(Wx + b)
+
+**Short Quiz**
+
+1.	
+Define: * **Diffusion Model**	Generate a new image of a landscape.	
+Define: * **GAN**	Generate a new image of a cat.	
+Define: * **LLM**	Translate a sentence from English to Spanish.	
+Define: * **Chain-of-thought prompting**	A shop had 30 apples, then bought 20 more.	
+Define: * **Few-shot prompting**	Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?	
+Define: **Examples**
+
+* **Zero-shot prompting**	Translate "Good morning" into French.	
+Define: * **Diffusion Model**	A type of AI model that uses denoising diffusion process to generate new content.	
+Define: * **GAN (Generative Adversarial Network)**	A type of AI model that consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLM (Large Language Model)**	A type of AI model that uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot learning**	The user provides a few examples showing how the task should be done.	
+What is **Definitions**
+
+* **Zero-shot learning**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: * **Code Assistants**	Analyze code context, predict next lines or entire functions, fix errors and generate documentation.	
+Define: * **Meeting Assistants**	STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.	
+Define: * **Speech Systems (TTS – Text-to-Speech)**	Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.	
+Define: * **Speech Systems (STT – Speech-to-Text)**	Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.	
+Define: * **Image Captioning Systems**	Image → vision encoder extracts features, text decoder converts visual features to words.	
+Define: * **RAG (Retrieval-Augmented Generation) Systems**	Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.	
+Define: * **Diffusion Models**	Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.	
+Define: * **GANs (Generative Adversarial Networks)**	Consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLMs (Large Language Models)**	Based on Transformer architecture, uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought prompting**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot prompting**	The user provides a few examples showing how the task should be done.	
+What is **Key Points**
+
+* **Zero-shot prompting**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: **Study Summary	Generative AI**
+
+**Introduction**
+
+Generative AI refers to a class of artificial intelligence (AI) models that can generate new, original content, such as text, images, or audio.	
+Define: Answer	a) They can generate high-quality images.	
+What is What?	the main advantage of Diffusion Models over other Generative AI models?	
+Define: Answer	a) To generate new content.	
+What is b) To check if the generated content?	real or fake.	
+What is What?	the purpose of the Generator in a GAN?	
+Define: Answer	a) Zero-shot uses pre-trained knowledge, while few-shot uses examples.	
+What is What?	the main difference between zero-shot and few-shot prompting?	
+What is * **Generator-Discriminator architecture**: Generator: x → G(x), Discriminator: x → D(x), where x?	the input data.	
+What are **Equations/Formulas**
+
+* **Self-attention layer**: Q = K^T \* V, where Q, K, and V?	the query, key, and value vectors.	
+Define: * **Diffusion Model**	Generate high-quality images, create videos, or produce 3D models.	
+Define: * **GAN**	Generate realistic images, create art, or produce music.	
+Define: * **LLM**	Translate text from one language to another, summarize long documents, or generate code.	
+Define: * **Chain-of-thought prompting**	A shop had 30 apples, then bought 20 more.	
+Define: * **Few-shot prompting**	Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?	
+Define: **Examples**
+
+* **Zero-shot prompting**	Translate 'Good morning' into French.	
+Define: * **Diffusion Model**	A type of AI model that uses denoising diffusion process to generate new content.	
+Define: * **GAN (Generative Adversarial Network)**	A type of AI model that consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLM (Large Language Model)**	A type of AI model that uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought learning**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot learning**	The user provides a few examples showing how the task should be done.	
+What is **Definitions**
+
+* **Zero-shot learning**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: * **Code Assistants (Copilot)**	Analyze code context, predict next lines or entire functions, fix errors and generate documentation.	
+Define: * **Meeting Assistants (Zoom AI)**	STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.	
+Define: * **Speech Systems (TTS – Text-to-Speech)**	Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.	
+Define: * **Speech Systems (STT – Speech-to-Text)**	Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.	
+Define: * **Image Captioning Systems**	Image → vision encoder extracts features, text decoder converts visual features to words.	
+Define: * **RAG (Retrieval-Augmented Generation) Systems**	Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.	
+Define: * **Diffusion Models**	Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.	
+Define: * **GANs (Generative Adversarial Networks)**	Consists of two neural networks trained together: Generator and Discriminator.	
+Define: * **LLMs (Large Language Models)**	Based on Transformer architecture, uses self-attention layers to understand relationships between words.	
+Define: * **Chain-of-thought prompting**	Encourages the model to show step-by-step reasoning before giving the final answer.	
+Define: * **Few-shot prompting**	The user provides a few examples showing how the task should be done.	
+What is **Key Points**
+
+* **Zero-shot prompting**: The model?	given only the instruction and must complete the task using its pre-trained knowledge.	
+Define: **Structured Study Summary	Generative AI**
+
+**Introduction**
+
+Generative AI refers to a class of artificial intelligence models that can generate new, original content, such as text, images, or audio.	
+a) Creates new text, images, or audio
+b) Learns patterns from large datasets
+c) Responds creatively to prompts
+d) All of the above
+
+Answer: d) All of the above	Recall details / explanation: a) Creates new text, images, or audio
+b) Learns patterns from large datasets
+c) Responds creatively to prompts
+d) All of the above
+
+Answer: d) All of the above	
+What is the key feature of Generative AI systems?	Recall details / explanation: What is the key feature of Generative AI systems?	
+a) Changes colors, fonts, sizes, and alignment
+b) Modifies request or response
+c) Decides which function runs for a given URL
+d) Indicates the status of a request
+
+Answer: a) Changes colors, fonts, sizes, and alignment
+
+3.	Recall details / explanation: a) Changes colors, fonts, sizes, and alignment
+b) Modifies request or response
+c) Decides which function runs for a given URL
+d) Indicates the status of a request
+
+Answer: a) Changes colors, fonts, sizes, and alignment
+
+3.	
+What is the role of CSS in improving webpage appearance?	Recall details / explanation: What is the role of CSS in improving webpage appearance?	
+a) Face recognition on smartphones
+b) Image captioning
+c) Text-to-image prompts
+d) Prompt engineering
+
+Answer: a) Face recognition on smartphones
+
+2.	Recall details / explanation: a) Face recognition on smartphones
+b) Image captioning
+c) Text-to-image prompts
+d) Prompt engineering
+
+Answer: a) Face recognition on smartphones
+
+2.	
+What is the everyday use of computer vision in modern systems?	Recall details / explanation: What is the everyday use of computer vision in modern systems?	
+**Key Points**
+
+* **Mod 2**
+ + Everyday use of computer vision: face recognition on smartphones
+ + Retrieval-Augmented Generation (RAG): combines retrieval and generation to improve accuracy
+ + Text-to-text prompts: input text → output text (e.g., answers, summaries)
+ + Text-to-image prompts: input text → output image (e.g., pictures or illustrations)
+ + Prompt engineering: designing clear and specific prompts to improve AI results
+ + AI-assisted software testing: automates finding bugs in software
+ + Generative AI: creates new text, images, or audio from patterns learned from large datasets
+* **Mod 3**
+ + Semantic elements in HTML5: <header>, <footer>, <article>, <section>
+ + Role of CSS in improving webpage appearance: changes colors, fonts, sizes, and alignment
+ + Routing in Flask: decides which function runs for a given URL
+ + Basic features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing
+ + JavaScript events: detects event actions like clicks or key presses to build interactive web pages
+* **Mod 4**
+ + Speech-to-text: converts spoken words into written text (e.g., virtual assistants, dictation apps)
+ + AI tools for software testing: Testim, mabl (reduce manual testing effort, find bugs faster and accurately)
+ + Text-to-image generative model: DALL·E (creates images from text prompts)
+ + Image captioning: describes images using text (e.g., accessibility, search)
+ + Retrieval in RAG systems: finds information from stored data to answer questions
+ + Popular LLM-based assistants: ChatGPT, Google Bard (answer questions, create content)
+* **Mod 5**
+ + Routing in Flask: decides which function runs for a given URL
+ + Middleware in Flask: code that runs before or after a request (modifies request or response)
+ + Common HTTP status codes: 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently)
+ + Features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing
+* **Mod 6**
+ + Comparison of traditional software testing with AI-assisted testing
+ + Test automation: using software to run tests automatically (saves time compared to manual testing)
+ + Key features of Generative AI systems: creates new text, images, or audio, learns patterns from large datasets, responds creatively to prompts
+ + RAG (Retrieval-Augmented Generation): combines retrieval and generation to improve accuracy
+
+**Definitions**
+
+* **Computer Vision**: helps machines "see" and understand images
+* **Retrieval-Augmented Generation (RAG)**: combines retrieval and generation to improve accuracy
+* **Text-to-text prompts**: input text → output text (e.g., answers, summaries)
+* **Text-to-image prompts**: input text → output image (e.g., pictures or illustrations)
+* **Prompt engineering**: designing clear and specific prompts to improve AI results
+* **AI-assisted software testing**: automates finding bugs in software
+* **Generative AI**: creates new text, images, or audio from patterns learned from large datasets
+* **Semantic elements**: HTML5 elements that define the structure of a webpage (e.g., <header>, <footer>, <article>, <section>)
+* **CSS**: changes colors, fonts, sizes, and alignment to improve webpage appearance
+* **Routing**: decides which function runs for a given URL
+* **Middleware**: code that runs before or after a request (modifies request or response)
+* **HTTP status codes**: indicate the status of a request (e.g., 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently))
+
+**Examples**
+
+* Face recognition on smartphones (computer vision)
+* Retrieval-Augmented Generation (RAG) in AI systems
+* Text-to-text prompts: input text → output text (e.g., answers, summaries)
+* Text-to-image prompts: input text → output image (e.g., pictures or illustrations)
+* Prompt engineering: designing clear and specific prompts to improve AI results
+* AI-assisted software testing: automates finding bugs in software
+* Generative AI: creates new text, images, or audio from patterns learned from large datasets
+* DALL·E: text-to-image generative model
+* Image captioning: describes images using text (e.g., accessibility, search)
+
+**Equations/Formulas**
+
+None
+
+**Short Quiz**
+
+1.	Recall details / explanation: **Key Points**
+
+* **Mod 2**
+ + Everyday use of computer vision: face recognition on smartphones
+ + Retrieval-Augmented Generation (RAG): combines retrieval and generation to improve accuracy
+ + Text-to-text prompts: input text → output text (e.g., answers, summaries)
+ + Text-to-image prompts: input text → output image (e.g., pictures or illustrations)
+ + Prompt engineering: designing clear and specific prompts to improve AI results
+ + AI-assisted software testing: automates finding bugs in software
+ + Generative AI: creates new text, images, or audio from patterns learned from large datasets
+* **Mod 3**
+ + Semantic elements in HTML5: <header>, <footer>, <article>, <section>
+ + Role of CSS in improving webpage appearance: changes colors, fonts, sizes, and alignment
+ + Routing in Flask: decides which function runs for a given URL
+ + Basic features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing
+ + JavaScript events: detects event actions like clicks or key presses to build interactive web pages
+* **Mod 4**
+ + Speech-to-text: converts spoken words into written text (e.g., virtual assistants, dictation apps)
+ + AI tools for software testing: Testim, mabl (reduce manual testing effort, find bugs faster and accurately)
+ + Text-to-image generative model: DALL·E (creates images from text prompts)
+ + Image captioning: describes images using text (e.g., accessibility, search)
+ + Retrieval in RAG systems: finds information from stored data to answer questions
+ + Popular LLM-based assistants: ChatGPT, Google Bard (answer questions, create content)
+* **Mod 5**
+ + Routing in Flask: decides which function runs for a given URL
+ + Middleware in Flask: code that runs before or after a request (modifies request or response)
+ + Common HTTP status codes: 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently)
+ + Features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing
+* **Mod 6**
+ + Comparison of traditional software testing with AI-assisted testing
+ + Test automation: using software to run tests automatically (saves time compared to manual testing)
+ + Key features of Generative AI systems: creates new text, images, or audio, learns patterns from large datasets, responds creatively to prompts
+ + RAG (Retrieval-Augmented Generation): combines retrieval and generation to improve accuracy
+
+**Definitions**
+
+* **Computer Vision**: helps machines "see" and understand images
+* **Retrieval-Augmented Generation (RAG)**: combines retrieval and generation to improve accuracy
+* **Text-to-text prompts**: input text → output text (e.g., answers, summaries)
+* **Text-to-image prompts**: input text → output image (e.g., pictures or illustrations)
+* **Prompt engineering**: designing clear and specific prompts to improve AI results
+* **AI-assisted software testing**: automates finding bugs in software
+* **Generative AI**: creates new text, images, or audio from patterns learned from large datasets
+* **Semantic elements**: HTML5 elements that define the structure of a webpage (e.g., <header>, <footer>, <article>, <section>)
+* **CSS**: changes colors, fonts, sizes, and alignment to improve webpage appearance
+* **Routing**: decides which function runs for a given URL
+* **Middleware**: code that runs before or after a request (modifies request or response)
+* **HTTP status codes**: indicate the status of a request (e.g., 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently))
+
+**Examples**
+
+* Face recognition on smartphones (computer vision)
+* Retrieval-Augmented Generation (RAG) in AI systems
+* Text-to-text prompts: input text → output text (e.g., answers, summaries)
+* Text-to-image prompts: input text → output image (e.g., pictures or illustrations)
+* Prompt engineering: designing clear and specific prompts to improve AI results
+* AI-assisted software testing: automates finding bugs in software
+* Generative AI: creates new text, images, or audio from patterns learned from large datasets
+* DALL·E: text-to-image generative model
+* Image captioning: describes images using text (e.g., accessibility, search)
+
+**Equations/Formulas**
+
+None
+
+**Short Quiz**
+
+1.	

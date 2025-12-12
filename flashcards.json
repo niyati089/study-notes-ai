@@ -1,0 +1,1056 @@
+{
+  "exported_at": "2025-12-13T02:06:18.335314",
+  "total_cards": 150,
+  "cards": [
+    {
+      "id": 150,
+      "front": "Define: Answer",
+      "back": "b) They produce high-quality and detailed images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.866531"
+    },
+    {
+      "id": 149,
+      "front": "What are d) They?",
+      "back": "easy to use.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.856177"
+    },
+    {
+      "id": 148,
+      "front": "What are c) They?",
+      "back": "stable and predictable.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.848994"
+    },
+    {
+      "id": 147,
+      "front": "What are a) They?",
+      "back": "fast and efficient.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.837606"
+    },
+    {
+      "id": 146,
+      "front": "What is What?",
+      "back": "the main advantage of Diffusion Models?",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.829582"
+    },
+    {
+      "id": 145,
+      "front": "Define: Answer",
+      "back": "a) To generate new images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.819024"
+    },
+    {
+      "id": 144,
+      "front": "What is What?",
+      "back": "the purpose of the generator in a GAN?",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.811523"
+    },
+    {
+      "id": 143,
+      "front": "Define: Answer",
+      "back": "a) Zero-shot uses pre-trained knowledge, while few-shot uses examples.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.801521"
+    },
+    {
+      "id": 142,
+      "front": "What is What?",
+      "back": "the main difference between zero-shot and few-shot prompting?",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.793756"
+    },
+    {
+      "id": 141,
+      "front": "What is * **Diffusion Model architecture**: x_t = x_{t-1} + \\epsilon \\* \\sigma^{-1} (x_{t-1} - x_{t-2}), where x_t?",
+      "back": "the output at time t, \\epsilon is the noise vector, and \\sigma is the standard deviation.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.784673"
+    },
+    {
+      "id": 140,
+      "front": "What is * **GAN architecture**: G(z) = x, where G?",
+      "back": "the generator and z is the input noise vector.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.778768"
+    },
+    {
+      "id": 139,
+      "front": "What are **Equations/Formulas**\n\n* **Transformer architecture**: Q = K^T \\* V, where Q, K, and V?",
+      "back": "the query, key, and value vectors.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.767562"
+    },
+    {
+      "id": 138,
+      "front": "Define: * **Diffusion Model**",
+      "back": "Generate a new image of a landscape.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.755020"
+    },
+    {
+      "id": 137,
+      "front": "Define: * **GAN**",
+      "back": "Generate a new image of a cat.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.748235"
+    },
+    {
+      "id": 136,
+      "front": "Define: * **LLM**",
+      "back": "Translate \"Hello\" into Spanish.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.737630"
+    },
+    {
+      "id": 135,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "A shop had 30 apples, then bought 20 more.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.730336"
+    },
+    {
+      "id": 134,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.717206"
+    },
+    {
+      "id": 133,
+      "front": "Define: **Examples**\n\n* **Zero-shot prompting**",
+      "back": "Translate \"Good morning\" into French.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.709726"
+    },
+    {
+      "id": 132,
+      "front": "Define: * **Diffusion Model**",
+      "back": "A type of Generative AI model based on denoising diffusion process.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.699542"
+    },
+    {
+      "id": 131,
+      "front": "Define: * **GAN (Generative Adversarial Network)**",
+      "back": "A type of Generative AI model that consists of two neural networks trained together.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.690225"
+    },
+    {
+      "id": 130,
+      "front": "Define: * **LLM (Large Language Model)**",
+      "back": "A type of Generative AI model based on Transformer architecture.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.682029"
+    },
+    {
+      "id": 129,
+      "front": "Define: * **Chain-of-thought**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.671095"
+    },
+    {
+      "id": 128,
+      "front": "Define: * **Few-shot**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.664033"
+    },
+    {
+      "id": 127,
+      "front": "What is **Definitions**\n\n* **Zero-shot**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.653617"
+    },
+    {
+      "id": 126,
+      "front": "Define: * **Code Assistants (Copilot)**",
+      "back": "Analyze code context, predict next lines or entire functions, fix errors and generate documentation.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.646893"
+    },
+    {
+      "id": 125,
+      "front": "Define: * **Meeting Assistants (Zoom AI)**",
+      "back": "STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.637884"
+    },
+    {
+      "id": 124,
+      "front": "Define: * **Speech Systems (TTS – Text-to-Speech)**",
+      "back": "Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.631428"
+    },
+    {
+      "id": 123,
+      "front": "Define: * **Speech Systems (STT – Speech-to-Text)**",
+      "back": "Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.623556"
+    },
+    {
+      "id": 122,
+      "front": "Define: * **Image Captioning Systems**",
+      "back": "Image → vision encoder extracts features, text decoder converts visual features to words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.613004"
+    },
+    {
+      "id": 121,
+      "front": "Define: * **RAG (Retrieval-Augmented Generation) Systems**",
+      "back": "Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.603567"
+    },
+    {
+      "id": 120,
+      "front": "Define: * **Diffusion Models**",
+      "back": "Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.595275"
+    },
+    {
+      "id": 119,
+      "front": "Define: * **GANs (Generative Adversarial Networks)**",
+      "back": "Consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.586248"
+    },
+    {
+      "id": 118,
+      "front": "Define: * **LLMs (Large Language Models)**",
+      "back": "Based on Transformer architecture, uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.578738"
+    },
+    {
+      "id": 117,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.568674"
+    },
+    {
+      "id": 116,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.559580"
+    },
+    {
+      "id": 115,
+      "front": "What is **Key Points**\n\n* **Zero-shot prompting**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.548270"
+    },
+    {
+      "id": 114,
+      "front": "Define: **Study Summary",
+      "back": "Generative AI**\n\n**Introduction**\n\nGenerative AI refers to a subset of artificial intelligence that enables machines to generate new, original content, such as text, images, or audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:35:54.531241"
+    },
+    {
+      "id": 113,
+      "front": "Define: * **Meeting assistant**",
+      "back": "Use speech model to transcribe speech, LLM to summarize meeting content, and embedding model to detect topics, tasks, and action items.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.318978"
+    },
+    {
+      "id": 112,
+      "front": "Define: * **Speech system**",
+      "back": "Use speech encoder to recognize phonemes and words, and use decoder to generate text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.311264"
+    },
+    {
+      "id": 111,
+      "front": "Define: * **Image captioning system**",
+      "back": "Use vision encoder to extract features from an image, and use language decoder to generate captions.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.302121"
+    },
+    {
+      "id": 110,
+      "front": "Define: **Examples**\n\n* **RAG system**",
+      "back": "Convert user query into embeddings, retrieve relevant documents from a vector database, and use LLM to generate accurate answers.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.292897"
+    },
+    {
+      "id": 109,
+      "front": "Define: * **Code assistant**",
+      "back": "A type of AI system that uses code-specific LLMs to analyze code context and predict next lines or entire functions.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.284287"
+    },
+    {
+      "id": 108,
+      "front": "Define: * **Meeting assistant**",
+      "back": "A type of AI system that uses a combination of speech models, LLMs, and embedding models to summarize meeting content.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.274992"
+    },
+    {
+      "id": 107,
+      "front": "Define: * **Speech system**",
+      "back": "A type of AI system that uses a combination of speech encoders and decoders to generate text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.268886"
+    },
+    {
+      "id": 106,
+      "front": "Define: * **Image captioning system**",
+      "back": "A type of AI system that uses a combination of vision encoders and language decoders to generate captions.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.260279"
+    },
+    {
+      "id": 105,
+      "front": "Define: **Definitions**\n\n* **RAG system**",
+      "back": "A type of AI system that uses a combination of embedding models and LLMs to generate accurate answers.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.252327"
+    },
+    {
+      "id": 104,
+      "front": "Define: * **Code assistants**",
+      "back": "Use code-specific LLMs to analyze code context and predict next lines or entire functions.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.243950"
+    },
+    {
+      "id": 103,
+      "front": "Define: * **Meeting assistants**",
+      "back": "Use a combination of speech models, LLMs, and embedding models to summarize meeting content.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.236623"
+    },
+    {
+      "id": 102,
+      "front": "Define: * **Speech systems**",
+      "back": "Use a combination of speech encoders and decoders to generate text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.225018"
+    },
+    {
+      "id": 101,
+      "front": "Define: * **Image captioning systems**",
+      "back": "Use a combination of vision encoders and language decoders to generate captions.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.216402"
+    },
+    {
+      "id": 100,
+      "front": "Define: **Key Points**\n\n* **RAG systems**",
+      "back": "Use a combination of embedding models and LLMs to generate accurate answers.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.206092"
+    },
+    {
+      "id": 99,
+      "front": "Define: **Mod 4",
+      "back": "Generative AI Applications**\n\n**Introduction**\n\nGenerative AI has a wide range of applications, including image captioning, RAG systems, meeting assistants, speech systems, and code assistants.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.199781"
+    },
+    {
+      "id": 98,
+      "front": "Define: Answer",
+      "back": "a) Slow generation because of many denoising steps.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.189629"
+    },
+    {
+      "id": 97,
+      "front": "What is What?",
+      "back": "the main drawback of using Diffusion Models?",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.179333"
+    },
+    {
+      "id": 96,
+      "front": "Define: Answer",
+      "back": "a) Produces sharp, high-quality images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.170731"
+    },
+    {
+      "id": 95,
+      "front": "What is What?",
+      "back": "the main benefit of using GANs?",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.159253"
+    },
+    {
+      "id": 94,
+      "front": "Define: Answer",
+      "back": "b) Zero-shot uses pre-trained knowledge, few-shot uses examples.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.150689"
+    },
+    {
+      "id": 93,
+      "front": "What is c) Zero-shot?",
+      "back": "used for common tasks, few-shot is used for niche tasks.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.140729"
+    },
+    {
+      "id": 92,
+      "front": "What is What?",
+      "back": "the main difference between zero-shot and few-shot prompting?",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.133703"
+    },
+    {
+      "id": 91,
+      "front": "What is * **Generator-Discriminator architecture**: G(z) → D(G(z)), where G?",
+      "back": "the Generator and D is the Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.124651"
+    },
+    {
+      "id": 90,
+      "front": "What is **Equations/ Formulas**\n\n* **Self-attention mechanism**: Q = K^T \\* V, where Q?",
+      "back": "the query, K is the key, and V is the value.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.116913"
+    },
+    {
+      "id": 89,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "A shop had 30 apples, then bought 20 more.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.106722"
+    },
+    {
+      "id": 88,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.100057"
+    },
+    {
+      "id": 87,
+      "front": "Define: **Examples**\n\n* **Zero-shot prompting**",
+      "back": "Translate \"Good morning\" into French.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.090903"
+    },
+    {
+      "id": 86,
+      "front": "Define: * **Diffusion Model**",
+      "back": "A type of AI model that uses a denoising diffusion process to generate images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.083592"
+    },
+    {
+      "id": 85,
+      "front": "Define: * **GAN**",
+      "back": "A type of AI model that consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.074955"
+    },
+    {
+      "id": 84,
+      "front": "Define: * **LLM**",
+      "back": "A type of AI model that uses self-attention mechanisms to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.066204"
+    },
+    {
+      "id": 83,
+      "front": "Define: * **Chain-of-thought**",
+      "back": "A reasoning process that involves breaking down a problem into smaller sub-problems and solving each one step-by-step.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.056675"
+    },
+    {
+      "id": 82,
+      "front": "Define: * **Few-shot learning**",
+      "back": "The ability of a model to learn a task with only a few examples.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.046652"
+    },
+    {
+      "id": 81,
+      "front": "Define: **Definitions**\n\n* **Zero-shot learning**",
+      "back": "The ability of a model to perform a task without any prior training on that task.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.034766"
+    },
+    {
+      "id": 80,
+      "front": "Define: * **Diffusion Models**",
+      "back": "Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.026189"
+    },
+    {
+      "id": 79,
+      "front": "Define: * **GANs (Generative Adversarial Networks)**",
+      "back": "Consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.019735"
+    },
+    {
+      "id": 78,
+      "front": "Define: * **LLMs (Large Language Models)**",
+      "back": "Based on Transformer architecture, uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.012115"
+    },
+    {
+      "id": 77,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:04.004135"
+    },
+    {
+      "id": 76,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:03.994626"
+    },
+    {
+      "id": 75,
+      "front": "What is **Key Points**\n\n* **Zero-shot prompting**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:03.979687"
+    },
+    {
+      "id": 74,
+      "front": "Define: **Structured Study Summary**\n\n**Mod 2",
+      "back": "Generative AI Fundamentals**\n\n**Introduction**\n\nGenerative AI refers to a class of artificial intelligence models that can generate new content, such as text, images, or audio, based on a given prompt or input.",
+      "tags": [],
+      "created_at": "2025-12-12T20:29:03.947546"
+    },
+    {
+      "id": 73,
+      "front": "Define: Answer",
+      "back": "a) Analyze code context, predict next lines or entire functions, fix errors and generate documentation.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:23.053819"
+    },
+    {
+      "id": 72,
+      "front": "What is What?",
+      "back": "the main application of a Code Assistant?",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:23.042305"
+    },
+    {
+      "id": 71,
+      "front": "Define: Answer",
+      "back": "b) Extremely high-quality and detailed images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:23.032184"
+    },
+    {
+      "id": 70,
+      "front": "What is What?",
+      "back": "the main benefit of using a Diffusion Model?",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:23.023178"
+    },
+    {
+      "id": 69,
+      "front": "Define: Answer",
+      "back": "a) Zero-shot uses pre-trained knowledge, few-shot uses examples.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:23.010667"
+    },
+    {
+      "id": 68,
+      "front": "What is What?",
+      "back": "the main difference between zero-shot and few-shot prompting?",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.997975"
+    },
+    {
+      "id": 67,
+      "front": "Define: **Equations/Formulas**\n\n* **Self-attention layer**",
+      "back": "Q = K^T \\* V / sqrt(d)\n* **Generator**: G(z) = σ(Wz + b)\n* **Discriminator**: D(x) = σ(Wx + b)\n\n**Short Quiz**\n\n1.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.988361"
+    },
+    {
+      "id": 66,
+      "front": "Define: * **Diffusion Model**",
+      "back": "Generate a new image of a landscape.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.978031"
+    },
+    {
+      "id": 65,
+      "front": "Define: * **GAN**",
+      "back": "Generate a new image of a cat.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.960710"
+    },
+    {
+      "id": 64,
+      "front": "Define: * **LLM**",
+      "back": "Translate a sentence from English to Spanish.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.948709"
+    },
+    {
+      "id": 63,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "A shop had 30 apples, then bought 20 more.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.930659"
+    },
+    {
+      "id": 62,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.917898"
+    },
+    {
+      "id": 61,
+      "front": "Define: **Examples**\n\n* **Zero-shot prompting**",
+      "back": "Translate \"Good morning\" into French.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.909394"
+    },
+    {
+      "id": 60,
+      "front": "Define: * **Diffusion Model**",
+      "back": "A type of AI model that uses denoising diffusion process to generate new content.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.897774"
+    },
+    {
+      "id": 59,
+      "front": "Define: * **GAN (Generative Adversarial Network)**",
+      "back": "A type of AI model that consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.890196"
+    },
+    {
+      "id": 58,
+      "front": "Define: * **LLM (Large Language Model)**",
+      "back": "A type of AI model that uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.875800"
+    },
+    {
+      "id": 57,
+      "front": "Define: * **Chain-of-thought**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.861764"
+    },
+    {
+      "id": 56,
+      "front": "Define: * **Few-shot learning**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.850202"
+    },
+    {
+      "id": 55,
+      "front": "What is **Definitions**\n\n* **Zero-shot learning**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.839647"
+    },
+    {
+      "id": 54,
+      "front": "Define: * **Code Assistants**",
+      "back": "Analyze code context, predict next lines or entire functions, fix errors and generate documentation.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.828217"
+    },
+    {
+      "id": 53,
+      "front": "Define: * **Meeting Assistants**",
+      "back": "STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.819472"
+    },
+    {
+      "id": 52,
+      "front": "Define: * **Speech Systems (TTS – Text-to-Speech)**",
+      "back": "Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.812431"
+    },
+    {
+      "id": 51,
+      "front": "Define: * **Speech Systems (STT – Speech-to-Text)**",
+      "back": "Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.805863"
+    },
+    {
+      "id": 50,
+      "front": "Define: * **Image Captioning Systems**",
+      "back": "Image → vision encoder extracts features, text decoder converts visual features to words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.798383"
+    },
+    {
+      "id": 49,
+      "front": "Define: * **RAG (Retrieval-Augmented Generation) Systems**",
+      "back": "Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.793049"
+    },
+    {
+      "id": 48,
+      "front": "Define: * **Diffusion Models**",
+      "back": "Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.785066"
+    },
+    {
+      "id": 47,
+      "front": "Define: * **GANs (Generative Adversarial Networks)**",
+      "back": "Consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.777541"
+    },
+    {
+      "id": 46,
+      "front": "Define: * **LLMs (Large Language Models)**",
+      "back": "Based on Transformer architecture, uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.766949"
+    },
+    {
+      "id": 45,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.760982"
+    },
+    {
+      "id": 44,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.752338"
+    },
+    {
+      "id": 43,
+      "front": "What is **Key Points**\n\n* **Zero-shot prompting**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.744800"
+    },
+    {
+      "id": 42,
+      "front": "Define: **Study Summary",
+      "back": "Generative AI**\n\n**Introduction**\n\nGenerative AI refers to a class of artificial intelligence (AI) models that can generate new, original content, such as text, images, or audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:23:22.728434"
+    },
+    {
+      "id": 41,
+      "front": "Define: Answer",
+      "back": "a) They can generate high-quality images.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.609397"
+    },
+    {
+      "id": 40,
+      "front": "What is What?",
+      "back": "the main advantage of Diffusion Models over other Generative AI models?",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.602283"
+    },
+    {
+      "id": 39,
+      "front": "Define: Answer",
+      "back": "a) To generate new content.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.595448"
+    },
+    {
+      "id": 38,
+      "front": "What is b) To check if the generated content?",
+      "back": "real or fake.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.588776"
+    },
+    {
+      "id": 37,
+      "front": "What is What?",
+      "back": "the purpose of the Generator in a GAN?",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.581389"
+    },
+    {
+      "id": 36,
+      "front": "Define: Answer",
+      "back": "a) Zero-shot uses pre-trained knowledge, while few-shot uses examples.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.574307"
+    },
+    {
+      "id": 35,
+      "front": "What is What?",
+      "back": "the main difference between zero-shot and few-shot prompting?",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.565918"
+    },
+    {
+      "id": 34,
+      "front": "What is * **Generator-Discriminator architecture**: Generator: x → G(x), Discriminator: x → D(x), where x?",
+      "back": "the input data.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.558846"
+    },
+    {
+      "id": 33,
+      "front": "What are **Equations/Formulas**\n\n* **Self-attention layer**: Q = K^T \\* V, where Q, K, and V?",
+      "back": "the query, key, and value vectors.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.550429"
+    },
+    {
+      "id": 32,
+      "front": "Define: * **Diffusion Model**",
+      "back": "Generate high-quality images, create videos, or produce 3D models.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.542918"
+    },
+    {
+      "id": 31,
+      "front": "Define: * **GAN**",
+      "back": "Generate realistic images, create art, or produce music.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.535994"
+    },
+    {
+      "id": 30,
+      "front": "Define: * **LLM**",
+      "back": "Translate text from one language to another, summarize long documents, or generate code.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.529093"
+    },
+    {
+      "id": 29,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "A shop had 30 apples, then bought 20 more.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.522071"
+    },
+    {
+      "id": 28,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "Food: Pizza → Category: Fast food, Food: Dosa → Category: South Indian, Task: Food: Sushi → Category: ?",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.514980"
+    },
+    {
+      "id": 27,
+      "front": "Define: **Examples**\n\n* **Zero-shot prompting**",
+      "back": "Translate 'Good morning' into French.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.509212"
+    },
+    {
+      "id": 26,
+      "front": "Define: * **Diffusion Model**",
+      "back": "A type of AI model that uses denoising diffusion process to generate new content.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.501052"
+    },
+    {
+      "id": 25,
+      "front": "Define: * **GAN (Generative Adversarial Network)**",
+      "back": "A type of AI model that consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.493614"
+    },
+    {
+      "id": 24,
+      "front": "Define: * **LLM (Large Language Model)**",
+      "back": "A type of AI model that uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.486838"
+    },
+    {
+      "id": 23,
+      "front": "Define: * **Chain-of-thought learning**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.477687"
+    },
+    {
+      "id": 22,
+      "front": "Define: * **Few-shot learning**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.469663"
+    },
+    {
+      "id": 21,
+      "front": "What is **Definitions**\n\n* **Zero-shot learning**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.462884"
+    },
+    {
+      "id": 20,
+      "front": "Define: * **Code Assistants (Copilot)**",
+      "back": "Analyze code context, predict next lines or entire functions, fix errors and generate documentation.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.455484"
+    },
+    {
+      "id": 19,
+      "front": "Define: * **Meeting Assistants (Zoom AI)**",
+      "back": "STT model transcribes speech, LLM summarizes meeting content, embedding model detects topics, tasks, and action items.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.446435"
+    },
+    {
+      "id": 18,
+      "front": "Define: * **Speech Systems (TTS – Text-to-Speech)**",
+      "back": "Convert text → phonemes → acoustic representation, neural vocoder generates human-like audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.438109"
+    },
+    {
+      "id": 17,
+      "front": "Define: * **Speech Systems (STT – Speech-to-Text)**",
+      "back": "Convert audio waveform into spectrogram, speech encoder recognizes phonemes and words, decoder generates text output.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.429106"
+    },
+    {
+      "id": 16,
+      "front": "Define: * **Image Captioning Systems**",
+      "back": "Image → vision encoder extracts features, text decoder converts visual features to words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.416529"
+    },
+    {
+      "id": 15,
+      "front": "Define: * **RAG (Retrieval-Augmented Generation) Systems**",
+      "back": "Convert user query into embeddings, retrieve relevant documents from a vector database, and LLM reads the retrieved documents and generates an accurate answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.400463"
+    },
+    {
+      "id": 14,
+      "front": "Define: * **Diffusion Models**",
+      "back": "Based on denoising diffusion process, training: add noise to images in many steps, generation: start from noise → gradually remove noise → final image.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.382197"
+    },
+    {
+      "id": 13,
+      "front": "Define: * **GANs (Generative Adversarial Networks)**",
+      "back": "Consists of two neural networks trained together: Generator and Discriminator.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.349427"
+    },
+    {
+      "id": 12,
+      "front": "Define: * **LLMs (Large Language Models)**",
+      "back": "Based on Transformer architecture, uses self-attention layers to understand relationships between words.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.331622"
+    },
+    {
+      "id": 11,
+      "front": "Define: * **Chain-of-thought prompting**",
+      "back": "Encourages the model to show step-by-step reasoning before giving the final answer.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.317832"
+    },
+    {
+      "id": 10,
+      "front": "Define: * **Few-shot prompting**",
+      "back": "The user provides a few examples showing how the task should be done.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.300154"
+    },
+    {
+      "id": 9,
+      "front": "What is **Key Points**\n\n* **Zero-shot prompting**: The model?",
+      "back": "given only the instruction and must complete the task using its pre-trained knowledge.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.279672"
+    },
+    {
+      "id": 8,
+      "front": "Define: **Structured Study Summary",
+      "back": "Generative AI**\n\n**Introduction**\n\nGenerative AI refers to a class of artificial intelligence models that can generate new, original content, such as text, images, or audio.",
+      "tags": [],
+      "created_at": "2025-12-12T20:09:26.252064"
+    },
+    {
+      "id": 7,
+      "front": "a) Creates new text, images, or audio\nb) Learns patterns from large datasets\nc) Responds creatively to prompts\nd) All of the above\n\nAnswer: d) All of the above",
+      "back": "Recall details / explanation: a) Creates new text, images, or audio\nb) Learns patterns from large datasets\nc) Responds creatively to prompts\nd) All of the above\n\nAnswer: d) All of the above",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.595099"
+    },
+    {
+      "id": 6,
+      "front": "What is the key feature of Generative AI systems?",
+      "back": "Recall details / explanation: What is the key feature of Generative AI systems?",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.589495"
+    },
+    {
+      "id": 5,
+      "front": "a) Changes colors, fonts, sizes, and alignment\nb) Modifies request or response\nc) Decides which function runs for a given URL\nd) Indicates the status of a request\n\nAnswer: a) Changes colors, fonts, sizes, and alignment\n\n3.",
+      "back": "Recall details / explanation: a) Changes colors, fonts, sizes, and alignment\nb) Modifies request or response\nc) Decides which function runs for a given URL\nd) Indicates the status of a request\n\nAnswer: a) Changes colors, fonts, sizes, and alignment\n\n3.",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.582771"
+    },
+    {
+      "id": 4,
+      "front": "What is the role of CSS in improving webpage appearance?",
+      "back": "Recall details / explanation: What is the role of CSS in improving webpage appearance?",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.575334"
+    },
+    {
+      "id": 3,
+      "front": "a) Face recognition on smartphones\nb) Image captioning\nc) Text-to-image prompts\nd) Prompt engineering\n\nAnswer: a) Face recognition on smartphones\n\n2.",
+      "back": "Recall details / explanation: a) Face recognition on smartphones\nb) Image captioning\nc) Text-to-image prompts\nd) Prompt engineering\n\nAnswer: a) Face recognition on smartphones\n\n2.",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.568040"
+    },
+    {
+      "id": 2,
+      "front": "What is the everyday use of computer vision in modern systems?",
+      "back": "Recall details / explanation: What is the everyday use of computer vision in modern systems?",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.559458"
+    },
+    {
+      "id": 1,
+      "front": "**Key Points**\n\n* **Mod 2**\n + Everyday use of computer vision: face recognition on smartphones\n + Retrieval-Augmented Generation (RAG): combines retrieval and generation to improve accuracy\n + Text-to-text prompts: input text → output text (e.g., answers, summaries)\n + Text-to-image prompts: input text → output image (e.g., pictures or illustrations)\n + Prompt engineering: designing clear and specific prompts to improve AI results\n + AI-assisted software testing: automates finding bugs in software\n + Generative AI: creates new text, images, or audio from patterns learned from large datasets\n* **Mod 3**\n + Semantic elements in HTML5: <header>, <footer>, <article>, <section>\n + Role of CSS in improving webpage appearance: changes colors, fonts, sizes, and alignment\n + Routing in Flask: decides which function runs for a given URL\n + Basic features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing\n + JavaScript events: detects event actions like clicks or key presses to build interactive web pages\n* **Mod 4**\n + Speech-to-text: converts spoken words into written text (e.g., virtual assistants, dictation apps)\n + AI tools for software testing: Testim, mabl (reduce manual testing effort, find bugs faster and accurately)\n + Text-to-image generative model: DALL·E (creates images from text prompts)\n + Image captioning: describes images using text (e.g., accessibility, search)\n + Retrieval in RAG systems: finds information from stored data to answer questions\n + Popular LLM-based assistants: ChatGPT, Google Bard (answer questions, create content)\n* **Mod 5**\n + Routing in Flask: decides which function runs for a given URL\n + Middleware in Flask: code that runs before or after a request (modifies request or response)\n + Common HTTP status codes: 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently)\n + Features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing\n* **Mod 6**\n + Comparison of traditional software testing with AI-assisted testing\n + Test automation: using software to run tests automatically (saves time compared to manual testing)\n + Key features of Generative AI systems: creates new text, images, or audio, learns patterns from large datasets, responds creatively to prompts\n + RAG (Retrieval-Augmented Generation): combines retrieval and generation to improve accuracy\n\n**Definitions**\n\n* **Computer Vision**: helps machines \"see\" and understand images\n* **Retrieval-Augmented Generation (RAG)**: combines retrieval and generation to improve accuracy\n* **Text-to-text prompts**: input text → output text (e.g., answers, summaries)\n* **Text-to-image prompts**: input text → output image (e.g., pictures or illustrations)\n* **Prompt engineering**: designing clear and specific prompts to improve AI results\n* **AI-assisted software testing**: automates finding bugs in software\n* **Generative AI**: creates new text, images, or audio from patterns learned from large datasets\n* **Semantic elements**: HTML5 elements that define the structure of a webpage (e.g., <header>, <footer>, <article>, <section>)\n* **CSS**: changes colors, fonts, sizes, and alignment to improve webpage appearance\n* **Routing**: decides which function runs for a given URL\n* **Middleware**: code that runs before or after a request (modifies request or response)\n* **HTTP status codes**: indicate the status of a request (e.g., 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently))\n\n**Examples**\n\n* Face recognition on smartphones (computer vision)\n* Retrieval-Augmented Generation (RAG) in AI systems\n* Text-to-text prompts: input text → output text (e.g., answers, summaries)\n* Text-to-image prompts: input text → output image (e.g., pictures or illustrations)\n* Prompt engineering: designing clear and specific prompts to improve AI results\n* AI-assisted software testing: automates finding bugs in software\n* Generative AI: creates new text, images, or audio from patterns learned from large datasets\n* DALL·E: text-to-image generative model\n* Image captioning: describes images using text (e.g., accessibility, search)\n\n**Equations/Formulas**\n\nNone\n\n**Short Quiz**\n\n1.",
+      "back": "Recall details / explanation: **Key Points**\n\n* **Mod 2**\n + Everyday use of computer vision: face recognition on smartphones\n + Retrieval-Augmented Generation (RAG): combines retrieval and generation to improve accuracy\n + Text-to-text prompts: input text → output text (e.g., answers, summaries)\n + Text-to-image prompts: input text → output image (e.g., pictures or illustrations)\n + Prompt engineering: designing clear and specific prompts to improve AI results\n + AI-assisted software testing: automates finding bugs in software\n + Generative AI: creates new text, images, or audio from patterns learned from large datasets\n* **Mod 3**\n + Semantic elements in HTML5: <header>, <footer>, <article>, <section>\n + Role of CSS in improving webpage appearance: changes colors, fonts, sizes, and alignment\n + Routing in Flask: decides which function runs for a given URL\n + Basic features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing\n + JavaScript events: detects event actions like clicks or key presses to build interactive web pages\n* **Mod 4**\n + Speech-to-text: converts spoken words into written text (e.g., virtual assistants, dictation apps)\n + AI tools for software testing: Testim, mabl (reduce manual testing effort, find bugs faster and accurately)\n + Text-to-image generative model: DALL·E (creates images from text prompts)\n + Image captioning: describes images using text (e.g., accessibility, search)\n + Retrieval in RAG systems: finds information from stored data to answer questions\n + Popular LLM-based assistants: ChatGPT, Google Bard (answer questions, create content)\n* **Mod 5**\n + Routing in Flask: decides which function runs for a given URL\n + Middleware in Flask: code that runs before or after a request (modifies request or response)\n + Common HTTP status codes: 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently)\n + Features of Flask: lightweight, easy to learn, built-in development server, template rendering, URL routing\n* **Mod 6**\n + Comparison of traditional software testing with AI-assisted testing\n + Test automation: using software to run tests automatically (saves time compared to manual testing)\n + Key features of Generative AI systems: creates new text, images, or audio, learns patterns from large datasets, responds creatively to prompts\n + RAG (Retrieval-Augmented Generation): combines retrieval and generation to improve accuracy\n\n**Definitions**\n\n* **Computer Vision**: helps machines \"see\" and understand images\n* **Retrieval-Augmented Generation (RAG)**: combines retrieval and generation to improve accuracy\n* **Text-to-text prompts**: input text → output text (e.g., answers, summaries)\n* **Text-to-image prompts**: input text → output image (e.g., pictures or illustrations)\n* **Prompt engineering**: designing clear and specific prompts to improve AI results\n* **AI-assisted software testing**: automates finding bugs in software\n* **Generative AI**: creates new text, images, or audio from patterns learned from large datasets\n* **Semantic elements**: HTML5 elements that define the structure of a webpage (e.g., <header>, <footer>, <article>, <section>)\n* **CSS**: changes colors, fonts, sizes, and alignment to improve webpage appearance\n* **Routing**: decides which function runs for a given URL\n* **Middleware**: code that runs before or after a request (modifies request or response)\n* **HTTP status codes**: indicate the status of a request (e.g., 200 (OK), 404 (Not Found), 500 (Internal Server Error), 301 (Moved Permanently))\n\n**Examples**\n\n* Face recognition on smartphones (computer vision)\n* Retrieval-Augmented Generation (RAG) in AI systems\n* Text-to-text prompts: input text → output text (e.g., answers, summaries)\n* Text-to-image prompts: input text → output image (e.g., pictures or illustrations)\n* Prompt engineering: designing clear and specific prompts to improve AI results\n* AI-assisted software testing: automates finding bugs in software\n* Generative AI: creates new text, images, or audio from patterns learned from large datasets\n* DALL·E: text-to-image generative model\n* Image captioning: describes images using text (e.g., accessibility, search)\n\n**Equations/Formulas**\n\nNone\n\n**Short Quiz**\n\n1.",
+      "tags": [],
+      "created_at": "2025-12-10T20:48:26.544697"
+    }
+  ]
+}
