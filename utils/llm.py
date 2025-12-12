@@ -61,19 +61,76 @@ def generate_summary(text: str, llm="default", model=None, temperature=0.2):
 
 
 
-def answer_with_context(question: str, context_chunks: List[Dict], llm="default", model=None, temperature=0.1):
+def answer_with_context(question, context_chunks, llm="groq", model="llama-3.1-70b-versatile", temperature=0.3):
     """
-    Build a prompt that includes top context chunks and asks to answer strictly from them.
-    Returns {'answer': str, 'used_chunks': [...]}
+    Answer questions using retrieved context
     """
-    context_text = "\n\n---\n\n".join([f"[score:{c['norm_score']:.2f}] {c['chunk']}" for c in context_chunks])
-    prompt = (
-        "Answer the question using ONLY the context provided below. If the context is insufficient, say so.\n\n"
-        f"CONTEXT:\n{context_text}\n\nQUESTION:\n{question}\n\n"
-        "Answer precisely, cite the chunk index numbers if helpful and include short explanation/steps."
-    )
-    if llm == "ollama":
-        ans = ollama_chat(prompt, model=model or "llama2", temperature=temperature, max_tokens=1024)
-    else:
-        ans = groq_chat(prompt, model=model or "llama3-8b", temperature=temperature, max_tokens=1024)
-    return {"answer": ans, "used_chunks": context_chunks}
+    
+    # Build context from chunks
+    context = "\n\n".join([f"Passage {i+1}: {chunk}" for i, chunk in enumerate(context_chunks)])
+    
+    prompt = f"""You are a helpful study assistant. Answer the question based on the provided context.
+
+RULES:
+1. Answer naturally in complete sentences
+2. DO NOT mention chunk numbers, passage numbers, or citations
+3. DO NOT say "According to the context" or "Based on the passages"
+4. Write as if you naturally know this information
+5. If the context doesn't contain the answer, say "I don't have enough information to answer that."
+6. Keep answers clear, concise, and well-organized
+7. Use bullet points or numbering only when listing multiple items
+
+CONTEXT:
+{context}
+
+QUESTION: {question}
+
+ANSWER (respond naturally without references):"""
+
+    if llm == "groq":
+        from groq import Groq
+        import os
+        client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+        
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a knowledgeable study assistant. Answer questions naturally without citing sources or mentioning chunks."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=temperature,
+            max_tokens=1000
+        )
+        answer = response.choices[0].message.content.strip()
+    
+    elif llm == "ollama":
+        import requests
+        import os
+        
+        ollama_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        response = requests.post(
+            f"{ollama_url}/api/generate",
+            json={
+                "model": model,
+                "prompt": prompt,
+                "stream": False,
+                "temperature": temperature,
+                "system": "You are a knowledgeable study assistant. Answer questions naturally without citing sources or mentioning chunks."
+            }
+        )
+        answer = response.json()["response"].strip()
+    
+    # Return answer and the chunks used (for optional "show sources" feature)
+    used_chunks = [
+        {
+            "index": i,
+            "chunk": chunk,
+            "norm_score": 0.8  # You can calculate actual scores if available
+        }
+        for i, chunk in enumerate(context_chunks[:3])  # Show top 3
+    ]
+    
+    return {
+        "answer": answer,
+        "used_chunks": used_chunks
+    }

@@ -234,18 +234,21 @@ if uploaded_files:
                     margin: 0.5rem 0;
                     border-left: 3px solid #AF52DE;
                 ">
-                    <strong>🤖 Assistant</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span><br/>
-                    {message}
+                    <strong>🤖 Assistant</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span>
                 </div>
                 """, unsafe_allow_html=True)
+                st.write(message)  # Use st.write instead of embedding in HTML
                 
                 # Show the used chunks
                 if 'used_chunks' in locals() and used_chunks:
                     with st.expander("🔍 Sources used (click to expand)"):
-                        for uc in used_chunks:
-                            st.markdown(f"**Chunk #{uc.get('index')}** (relevance: {uc.get('norm_score'):.2%})")
-                            st.text(uc.get('chunk')[:500] + ("..." if len(uc.get('chunk'))>500 else ""))
-                            st.markdown("---")
+                        for idx, uc in enumerate(used_chunks):
+                            chunk_content = uc.get('chunk', '')
+                            if chunk_content:
+                                chunk_str = str(chunk_content)
+                                st.markdown(f"**Source #{idx + 1}** (relevance: {uc.get('norm_score', 0):.0%})")
+                                st.text(chunk_str[:500] + ("..." if len(chunk_str) > 500 else ""))
+                                st.markdown("---")
                 
                 # Download button
                 if st.button(f"{get_decorative_emoji('download')} Download as PDF", key=f"dl_{ts}"):
