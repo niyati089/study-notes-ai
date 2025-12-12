@@ -291,49 +291,33 @@ if uploaded_files:
 
         # Export notes section
         if notes:
-            st.markdown("---")
-            st.markdown("#### 📥 Export Notes")
-            col_exp1, col_exp2 = st.columns(2)
-            with col_exp1:
-                if st.button("📄 PDF", use_container_width=True, key="export_notes_pdf"):
-                    from utils.export import export_notes_to_pdf
-                    fname = export_notes_to_pdf(notes, "my_notes.pdf")
-                    with open(fname, "rb") as f:
-                        st.download_button(
-                            "⬇️ Download PDF", 
-                            f, 
-                            file_name="my_study_notes.pdf",
-                            mime="application/pdf",
-                            use_container_width=True
-                        )
-            with col_exp2:
-                if st.button("📝 Markdown", use_container_width=True, key="export_notes_md"):
-                    from utils.export import export_notes_to_markdown
-                    fname = export_notes_to_markdown(notes, "my_notes.md")
-                    with open(fname, "r", encoding='utf-8') as f:
-                        st.download_button(
-                            "⬇️ Download MD", 
-                            f, 
-                            file_name="my_study_notes.md",
-                            mime="text/markdown",
-                            use_container_width=True
-                        )
+                    st.markdown("---")
+                    st.markdown("#### 📥 Export Notes")
+                    if st.button("📄 Export as PDF", use_container_width=True, key="export_notes_pdf"):
+                        from utils.export import export_notes_to_pdf
+                        fname = export_notes_to_pdf(notes, "my_notes.pdf")
+                        with open(fname, "rb") as f:
+                            st.download_button(
+                                "⬇️ Download PDF", 
+                                f, 
+                                file_name="my_study_notes.pdf",
+                                mime="application/pdf",
+                                use_container_width=True
+                            )
 
         st.markdown("---")
         st.markdown(f"### {get_decorative_emoji('flashcards')} Flashcards")
-        
+
+
         if st.button(f"🤖 Generate Smart Flashcards", use_container_width=True):
             with st.spinner("✨ Creating flashcards from your document..."):
-                # Generate summary from document
-                summ = generate_summary(
-                    combined_text[:8000], 
-                    llm=("ollama" if selected_llm=="ollama" else "groq"), 
-                    model=model_option, 
-                    temperature=temperature
-                )
+                # Use clean text directly instead of summary
+                # This avoids markdown formatting issues
+                clean_content = combined_text[:8000]
+                
                 # Generate flashcards using LLM
                 cards = generate_flashcards_from_text(
-                    summ, 
+                    clean_content,  # <-- Use original text, not summary
                     max_cards=40,
                     llm=("ollama" if selected_llm=="ollama" else "groq"),
                     model=model_option,
@@ -359,69 +343,21 @@ if uploaded_files:
                     </div>
                     """, unsafe_allow_html=True)
         
-        if st.button(f"{get_decorative_emoji('download')} Export Flashcards", use_container_width=True):
-            fcards = get_flashcards()
-            if fcards:
-                st.markdown("#### Choose Export Format:")
-                col_f1, col_f2, col_f3 = st.columns(3)
-                
-                with col_f1:
-                    # PDF Export
-                    from utils.export import export_flashcards_to_pdf
-                    fname = export_flashcards_to_pdf(fcards, "flashcards.pdf")
-                    with open(fname, "rb") as f:
-                        st.download_button(
-                            "📄 PDF", 
-                            f, 
-                            file_name="my_flashcards.pdf",
-                            mime="application/pdf",
-                            use_container_width=True
-                        )
-                
-                with col_f2:
-                    # CSV Export
-                    import csv, io
-                    buf = io.StringIO()
-                    writer = csv.writer(buf)
-                    writer.writerow(["front","back","tags","created_at"])
-                    for fid, front, back, tags, created in fcards:
-                        writer.writerow([front, back, tags, created])
-                    st.download_button(
-                        "📊 CSV", 
-                        buf.getvalue(), 
-                        file_name="flashcards.csv",
-                        mime="text/csv",
-                        use_container_width=True
-                    )
-                
-                with col_f3:
-                    # JSON Export
-                    from utils.export import export_flashcards_to_json
-                    fname = export_flashcards_to_json(fcards, "flashcards.json")
-                    with open(fname, "r", encoding='utf-8') as f:
-                        st.download_button(
-                            "💾 JSON", 
-                            f, 
-                            file_name="flashcards.json",
-                            mime="application/json",
-                            use_container_width=True
-                        )
-                
-                # Anki format
-                st.markdown("---")
-                from utils.export import export_flashcards_to_anki
-                fname = export_flashcards_to_anki(fcards, "flashcards_anki.txt")
-                with open(fname, "r", encoding='utf-8') as f:
-                    st.download_button(
-                        "🎯 Anki Format (import to Anki app)", 
-                        f, 
-                        file_name="flashcards_anki.txt",
-                        mime="text/plain",
-                        use_container_width=True
-                    )
-            else:
-                st.warning("No flashcards to export yet")
-
+        if st.button(f"{get_decorative_emoji('download')} Export Flashcards as PDF", use_container_width=True):
+                    fcards = get_flashcards()
+                    if fcards:
+                        from utils.export import export_flashcards_to_pdf
+                        fname = export_flashcards_to_pdf(fcards, "flashcards.pdf")
+                        with open(fname, "rb") as f:
+                            st.download_button(
+                                "⬇️ Download PDF", 
+                                f, 
+                                file_name="my_flashcards.pdf",
+                                mime="application/pdf",
+                                use_container_width=True
+                            )
+                    else:
+                        st.warning("No flashcards to export yet")
 # else: no upload
 else:
     # Centered welcome message

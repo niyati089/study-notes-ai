@@ -247,56 +247,56 @@ def export_flashcards_to_pdf(flashcards, filename="my_flashcards.pdf"):
     return filename
 
 
-def export_notes_to_markdown(notes, filename="my_notes.md"):
-    """
-    Export notes to Markdown format
-    """
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write("# 📚 My Study Notes\n\n")
-        f.write(f"*Exported on {datetime.now().strftime('%B %d, %Y at %I:%M %p')}*\n\n")
-        f.write("---\n\n")
+# def export_notes_to_markdown(notes, filename="my_notes.md"):
+#     """
+#     Export notes to Markdown format
+#     """
+#     with open(filename, 'w', encoding='utf-8') as f:
+#         f.write("# 📚 My Study Notes\n\n")
+#         f.write(f"*Exported on {datetime.now().strftime('%B %d, %Y at %I:%M %p')}*\n\n")
+#         f.write("---\n\n")
         
-        for i, (nid, title, content, created) in enumerate(notes, 1):
-            f.write(f"## {i}. {title}\n\n")
-            f.write(f"*Created: {created}*\n\n")
-            f.write(f"{content}\n\n")
-            f.write("---\n\n")
+#         for i, (nid, title, content, created) in enumerate(notes, 1):
+#             f.write(f"## {i}. {title}\n\n")
+#             f.write(f"*Created: {created}*\n\n")
+#             f.write(f"{content}\n\n")
+#             f.write("---\n\n")
     
-    return filename
+#     return filename
 
 
-def export_flashcards_to_json(flashcards, filename="my_flashcards.json"):
-    """
-    Export flashcards to JSON format (great for importing to other apps)
-    """
-    cards_list = []
-    for fid, front, back, tags, created in flashcards:
-        cards_list.append({
-            "id": fid,
-            "front": front,
-            "back": back,
-            "tags": tags.split(',') if tags else [],
-            "created_at": created
-        })
+# def export_flashcards_to_json(flashcards, filename="my_flashcards.json"):
+#     """
+#     Export flashcards to JSON format (great for importing to other apps)
+#     """
+#     cards_list = []
+#     for fid, front, back, tags, created in flashcards:
+#         cards_list.append({
+#             "id": fid,
+#             "front": front,
+#             "back": back,
+#             "tags": tags.split(',') if tags else [],
+#             "created_at": created
+#         })
     
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump({
-            "exported_at": datetime.now().isoformat(),
-            "total_cards": len(cards_list),
-            "cards": cards_list
-        }, f, indent=2, ensure_ascii=False)
+#     with open(filename, 'w', encoding='utf-8') as f:
+#         json.dump({
+#             "exported_at": datetime.now().isoformat(),
+#             "total_cards": len(cards_list),
+#             "cards": cards_list
+#         }, f, indent=2, ensure_ascii=False)
     
-    return filename
+#     return filename
 
 
-def export_flashcards_to_anki(flashcards, filename="my_flashcards_anki.txt"):
-    """
-    Export flashcards in Anki-compatible format (tab-separated)
-    Can be imported directly into Anki
-    """
-    with open(filename, 'w', encoding='utf-8') as f:
-        for fid, front, back, tags, created in flashcards:
-            # Anki format: front\tback\ttags
-            f.write(f"{front}\t{back}\t{tags if tags else ''}\n")
+# def export_flashcards_to_anki(flashcards, filename="my_flashcards_anki.txt"):
+#     """
+#     Export flashcards in Anki-compatible format (tab-separated)
+#     Can be imported directly into Anki
+#     """
+#     with open(filename, 'w', encoding='utf-8') as f:
+#         for fid, front, back, tags, created in flashcards:
+#             # Anki format: front\tback\ttags
+#             f.write(f"{front}\t{back}\t{tags if tags else ''}\n")
     
-    return filename
+#     return filename
