@@ -10,7 +10,7 @@ from utils.embed import semantic_chunks, build_faiss_index, embed_model
 from utils.rag import retrieve
 from utils.llm import generate_summary, answer_with_context
 from utils.export import export_text_to_pdf
-from utils.notes_db import init_db, save_chat, get_chats, save_note, get_notes, save_flashcard, get_flashcards
+from utils.notes_db import init_db, save_chat, get_chats, save_note, get_notes, save_flashcard, get_flashcards, delete_note, update_note
 from utils.flashcards import generate_flashcards_from_text
 from utils.ui_styles import apply_whimsical_theme, get_decorative_emoji, create_gradient_text, create_badge
 
@@ -266,7 +266,40 @@ if uploaded_files:
             for nid, title, content, created in notes:
                 with st.expander(f"📝 {title}"):
                     st.markdown(f"*{created}*")
-                    st.write(content)
+                    
+                    # Check if this note is being edited
+                    if f"edit_{nid}" in st.session_state and st.session_state[f"edit_{nid}"]:
+                        # Edit mode
+                        edit_title = st.text_input("Title", value=title, key=f"edit_title_{nid}")
+                        edit_content = st.text_area("Content", value=content, height=150, key=f"edit_content_{nid}")
+                        
+                        col_save, col_cancel = st.columns(2)
+                        with col_save:
+                            if st.button("💾 Save", key=f"save_{nid}", use_container_width=True):
+                                from utils.notes_db import update_note
+                                update_note(nid, edit_title, edit_content)
+                                st.session_state[f"edit_{nid}"] = False
+                                st.success("✅ Note updated!")
+                                st.rerun()
+                        with col_cancel:
+                            if st.button("❌ Cancel", key=f"cancel_{nid}", use_container_width=True):
+                                st.session_state[f"edit_{nid}"] = False
+                                st.rerun()
+                    else:
+                        # View mode
+                        st.write(content)
+                        
+                        col_edit, col_delete = st.columns(2)
+                        with col_edit:
+                            if st.button("✏️ Edit", key=f"btn_edit_{nid}", use_container_width=True):
+                                st.session_state[f"edit_{nid}"] = True
+                                st.rerun()
+                        with col_delete:
+                            if st.button("🗑️ Delete", key=f"btn_delete_{nid}", use_container_width=True):
+                                from utils.notes_db import delete_note
+                                delete_note(nid)
+                                st.success("✅ Note deleted!")
+                                st.rerun()
         else:
             st.info("No notes yet. Create your first one below! ✨")
         

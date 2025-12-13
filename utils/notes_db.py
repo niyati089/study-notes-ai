@@ -78,3 +78,17 @@ def get_flashcards():
     rows = c.fetchall()
     conn.close()
     return rows
+
+def delete_note(note_id):
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("DELETE FROM notes WHERE id=?", (note_id,))
+    conn.commit()
+    conn.close()
+
+def update_note(note_id, title, content):
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("UPDATE notes SET title=?, content=? WHERE id=?", (title, content, note_id))
+    conn.commit()
+    conn.close()
