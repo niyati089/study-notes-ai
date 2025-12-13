@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 .cache/
 ".env" 
+*.db
+*.pdf
+flashcards.json
+flashcards_anki.txt
