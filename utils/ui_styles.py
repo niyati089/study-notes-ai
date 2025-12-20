@@ -230,7 +230,7 @@ def apply_whimsical_theme():
     }
     
     [data-testid="stFileUploader"]::before {
-        content: "🍎 Drop your PDFs here! ✨";
+        content: " Drop your PDFs here! ";
         display: block;
         text-align: center;
         font-size: 1.2rem;
@@ -292,7 +292,7 @@ def apply_whimsical_theme():
     
     /* Add emoji bullets to markdown lists */
     .stMarkdown li::before {
-        content: "🌸 ";
+        content: " ";
         margin-right: 0.5rem;
     }
     
@@ -387,7 +387,7 @@ def apply_whimsical_theme():
     
     /* Add decorative elements to columns */
     [data-testid="column"]:nth-child(1)::before {
-        content: "📚";
+        content: "";
         position: absolute;
         top: -10px;
         left: -10px;
@@ -396,7 +396,7 @@ def apply_whimsical_theme():
     }
     
     [data-testid="column"]:nth-child(2)::before {
-        content: "💬";
+        content: "";
         position: absolute;
         top: -10px;
         left: -10px;
@@ -462,21 +462,21 @@ def get_decorative_emoji(section):
     Returns appropriate emoji for different sections
     """
     emojis = {
-        "pdf": "📄",
-        "chat": "💭",
-        "notes": "📝",
-        "flashcards": "🎴",
-        "summary": "📋",
-        "upload": "📂",
-        "settings": "⚙️",
-        "success": "✨",
-        "loading": "⏳",
-        "save": "💾",
-        "download": "⬇️",
-        "generate": "🤖",
-        "search": "🔍"
+        "pdf": "",
+        "chat": "",
+        "notes": "",
+        "flashcards": "",
+        "summary": "",
+        "upload": "",
+        "settings": "",
+        "success": "",
+        "loading": "",
+        "save": "",
+        "download": "⬇",
+        "generate": "",
+        "search": ""
     }
-    return emojis.get(section, "✨")
+    return emojis.get(section, "")
 
 
 def create_gradient_text(text, gradient_type="rainbow"):

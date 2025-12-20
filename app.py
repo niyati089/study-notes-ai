@@ -18,9 +18,8 @@ init_db()
 
 # page config
 st.set_page_config(
-    page_title="AI Study Notes — Premium", 
+    page_title="AI Study Notes", 
     layout="wide",
-    page_icon="🍎",
     initial_sidebar_state="expanded"
 )
 
@@ -28,16 +27,16 @@ st.set_page_config(
 st.markdown(apply_whimsical_theme(), unsafe_allow_html=True)
 
 # Title with gradient effect
-st.markdown(f"<h1>🍎 AI Study Notes — Premium Suite ✨</h1>", unsafe_allow_html=True)
-st.markdown(f"<p style='text-align: center; color: #AF52DE; font-size: 1.1rem; margin-top: -1rem;'>Your whimsical study companion 🦋</p>", unsafe_allow_html=True)
+st.markdown(f"<h1>AI Study Notes</h1>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align: center; color: #AF52DE; font-size: 1.1rem; margin-top: -1rem;'>Your study companion</p>", unsafe_allow_html=True)
 
 # -----------------------------
 # SIDEBAR — LLM SETTINGS
 # -----------------------------
-st.sidebar.markdown(f"## {get_decorative_emoji('settings')} Settings & Magic")
+st.sidebar.markdown(f"## {get_decorative_emoji('settings')} Settings")
 
 llm_choice = st.sidebar.selectbox(
-    "🔮 LLM Provider",
+    "LLM Provider",
     ["Groq (cloud)", "Ollama (local)"],
     help="Choose your AI provider"
 )
@@ -65,7 +64,7 @@ ollama_models = [
 ]
 
 model_option = st.sidebar.selectbox(
-    "🤖 Model",
+    "Model",
     groq_models if selected_llm == "groq" else ollama_models,
     help="Select your AI model"
 )
@@ -74,29 +73,27 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("### 🎛️ Fine-tuning")
 
 temperature = st.sidebar.slider(
-    "🌡️ Temperature", 
+    "Temperature", 
     0.0, 1.0, 0.15,
     help="Higher = more creative, Lower = more focused"
 )
 top_k = st.sidebar.slider(
-    "🔍 Top-k retrieval", 
+    "Top-k retrieval", 
     1, 10, 5,
     help="Number of relevant chunks to retrieve"
 )
 max_chunk_words = st.sidebar.slider(
-    "📏 Max chunk (words)", 
+    "Max chunk (words)", 
     100, 800, 450,
     help="Size of text chunks for processing"
 )
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 🎨 Theme Info")
-st.sidebar.info("✨ Whimsical Apple-inspired design\n🍎 Smooth animations & gradients\n🌈 Optimized for joy!")
+
 
 # file uploader (multiple)
 st.markdown("---")
 uploaded_files = st.file_uploader(
-    "🍎 Drop your PDFs here!", 
+    "Drop your PDFs here!", 
     accept_multiple_files=True, 
     type=["pdf"],
     help="Upload one or more PDF files to get started"
@@ -135,7 +132,7 @@ if uploaded_files:
         st.markdown(f"### {get_decorative_emoji('summary')} Quick Summary")
         
         if st.button(f"{get_decorative_emoji('generate')} Generate Summary", use_container_width=True):
-            with st.spinner("✨ Generating magical summary..."):
+            with st.spinner("Generating summary..."):
                 st.session_state.quick_summary = generate_summary(
                     combined_text[:6000],
                     llm=("ollama" if selected_llm=="ollama" else "groq"),
@@ -160,11 +157,11 @@ if uploaded_files:
             # Save button appears AFTER summary is generated
             if st.button(f"{get_decorative_emoji('save')} Save to Notes", use_container_width=True):
                 save_note("Quick Summary", st.session_state.quick_summary)
-                st.success("✅ Saved to Notes!")
+                st.success("Saved to Notes!")
                 st.balloons()
 
     # build chunks & index
-    with st.spinner("🔮 Creating semantic chunks & building index..."):
+    with st.spinner("Creating semantic chunks & building index..."):
         chunks = semantic_chunks(combined_text, max_words=max_chunk_words)
         index, embeddings = build_faiss_index(chunks)
     st.session_state["chunks"] = chunks
@@ -180,7 +177,7 @@ if uploaded_files:
 
         # chat input
         user_input = st.text_input(
-            "💭 Ask me anything about your documents...", 
+            "Ask me anything about your documents...", 
             key="user_q",
             placeholder="e.g., What are the main topics discussed?"
         )
@@ -221,7 +218,7 @@ if uploaded_files:
                     margin: 0.5rem 0;
                     border-left: 3px solid #007AFF;
                 ">
-                    <strong>🧑 You</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span><br/>
+                    <strong>You</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span><br/>
                     {message}
                 </div>
                 """, unsafe_allow_html=True)
@@ -234,14 +231,14 @@ if uploaded_files:
                     margin: 0.5rem 0;
                     border-left: 3px solid #AF52DE;
                 ">
-                    <strong>🤖 Assistant</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span>
+                    <strong>Assistant</strong> <span style="color: #999; font-size: 0.85rem;">({ts})</span>
                 </div>
                 """, unsafe_allow_html=True)
                 st.write(message)  # Use st.write instead of embedding in HTML
                 
                 # Show the used chunks
                 if 'used_chunks' in locals() and used_chunks:
-                    with st.expander("🔍 Sources used (click to expand)"):
+                    with st.expander("Sources used (click to expand)"):
                         for idx, uc in enumerate(used_chunks):
                             chunk_content = uc.get('chunk', '')
                             if chunk_content:
@@ -254,7 +251,7 @@ if uploaded_files:
                 if st.button(f"{get_decorative_emoji('download')} Download as PDF", key=f"dl_{ts}"):
                     fname = export_text_to_pdf(message, filename="answer.pdf")
                     with open(fname, "rb") as f:
-                        st.download_button("📥 Download PDF", f, file_name="answer.pdf")
+                        st.download_button("Download PDF", f, file_name="answer.pdf")
 
     # right column: Notes, Flashcards
     with col3:
@@ -264,7 +261,7 @@ if uploaded_files:
         notes = get_notes()
         if notes:
             for nid, title, content, created in notes:
-                with st.expander(f"📝 {title}"):
+                with st.expander(f"{title}"):
                     st.markdown(f"*{created}*")
                     
                     # Check if this note is being edited
@@ -275,14 +272,14 @@ if uploaded_files:
                         
                         col_save, col_cancel = st.columns(2)
                         with col_save:
-                            if st.button("💾 Save", key=f"save_{nid}", use_container_width=True):
+                            if st.button("Save", key=f"save_{nid}", use_container_width=True):
                                 from utils.notes_db import update_note
                                 update_note(nid, edit_title, edit_content)
                                 st.session_state[f"edit_{nid}"] = False
-                                st.success("✅ Note updated!")
+                                st.success(" Note updated!")
                                 st.rerun()
                         with col_cancel:
-                            if st.button("❌ Cancel", key=f"cancel_{nid}", use_container_width=True):
+                            if st.button("Cancel", key=f"cancel_{nid}", use_container_width=True):
                                 st.session_state[f"edit_{nid}"] = False
                                 st.rerun()
                     else:
@@ -291,20 +288,20 @@ if uploaded_files:
                         
                         col_edit, col_delete = st.columns(2)
                         with col_edit:
-                            if st.button("✏️ Edit", key=f"btn_edit_{nid}", use_container_width=True):
+                            if st.button("Edit", key=f"btn_edit_{nid}", use_container_width=True):
                                 st.session_state[f"edit_{nid}"] = True
                                 st.rerun()
                         with col_delete:
                             if st.button("🗑️ Delete", key=f"btn_delete_{nid}", use_container_width=True):
                                 from utils.notes_db import delete_note
                                 delete_note(nid)
-                                st.success("✅ Note deleted!")
+                                st.success("Note deleted!")
                                 st.rerun()
         else:
-            st.info("No notes yet. Create your first one below! ✨")
+            st.info("No notes yet. Create your first one below! ")
         
         st.markdown("---")
-        st.markdown("#### ✍️ New Note")
+        st.markdown("#### New Note")
         
         note_title = st.text_input("Title", key="note_title", placeholder="My Brilliant Note")
         note_content = st.text_area("Content", key="note_content", height=150, placeholder="Write something amazing...")
@@ -314,7 +311,7 @@ if uploaded_files:
             c = note_content
             if c and c.strip():
                 save_note(t, c)
-                st.success("✅ Note saved!")
+                st.success(" Note saved!")
                 st.balloons()
                 st.session_state.note_title = ""
                 st.session_state.note_content = ""
@@ -325,8 +322,8 @@ if uploaded_files:
         # Export notes section
         if notes:
                     st.markdown("---")
-                    st.markdown("#### 📥 Export Notes")
-                    if st.button("📄 Export as PDF", use_container_width=True, key="export_notes_pdf"):
+                    st.markdown("#### Export Notes")
+                    if st.button("Export as PDF", use_container_width=True, key="export_notes_pdf"):
                         from utils.export import export_notes_to_pdf
                         fname = export_notes_to_pdf(notes, "my_notes.pdf")
                         with open(fname, "rb") as f:
@@ -342,8 +339,8 @@ if uploaded_files:
         st.markdown(f"### {get_decorative_emoji('flashcards')} Flashcards")
 
 
-        if st.button(f"🤖 Generate Smart Flashcards", use_container_width=True):
-            with st.spinner("✨ Creating flashcards from your document..."):
+        if st.button(f"Generate Smart Flashcards", use_container_width=True):
+            with st.spinner("Creating flashcards from your document..."):
                 # Use clean text directly instead of summary
                 # This avoids markdown formatting issues
                 clean_content = combined_text[:8000]
@@ -356,11 +353,11 @@ if uploaded_files:
                     model=model_option,
                     temperature=temperature
                 )
-                st.success(f"✅ Generated {len(cards)} flashcards!")
+                st.success(f"Generated {len(cards)} flashcards!")
                 st.balloons()
                 
                 # Show preview
-                st.markdown("**🎴 Preview (first 5):**")
+                st.markdown("**Preview (first 5):**")
                 for i, (front, back) in enumerate(cards[:5], 1):
                     st.markdown(f"""
                     <div style="
@@ -371,8 +368,8 @@ if uploaded_files:
                         border: 2px solid rgba(175, 82, 222, 0.2);
                     ">
                         <strong>Card {i}</strong><br/>
-                        <span style="color: #007AFF;">❓ {front[:100]}{'...' if len(front)>100 else ''}</span><br/>
-                        <span style="color: #34C759;">✅ {back[:100]}{'...' if len(back)>100 else ''}</span>
+                        <span style="color: #007AFF;"> {front[:100]}{'...' if len(front)>100 else ''}</span><br/>
+                        <span style="color: #34C759;"> {back[:100]}{'...' if len(back)>100 else ''}</span>
                     </div>
                     """, unsafe_allow_html=True)
         
@@ -402,9 +399,9 @@ else:
         border-radius: 20px;
         margin: 2rem 0;
     ">
-        <h2>🍎 Welcome to your Study Companion! ✨</h2>
+        <h2>Welcome to your Study Companion!</h2>
         <p style="font-size: 1.2rem; color: #AF52DE;">
-            Upload PDFs above to unlock the magic 🦋
+            Upload PDFs above.
         </p>
         <p style="color: #666;">
             Drag & drop multiple files or click to browse
@@ -420,7 +417,7 @@ else:
         notes = get_notes()
         if notes:
             for nid, title, content, created in notes[:5]:
-                with st.expander(f"📝 {title}"):
+                with st.expander(f"{title}"):
                     st.markdown(f"*{created}*")
                     st.write(content[:200] + ("..." if len(content)>200 else ""))
         else:
@@ -435,7 +432,7 @@ else:
                 st.markdown(f"*A:* {back[:80]}...")
                 st.markdown("---")
         else:
-            st.info("No flashcards yet! 🎴")
+            st.info("No flashcards yet!")
 
 # footer
 st.markdown("---")
@@ -448,7 +445,7 @@ st.markdown("""
     backdrop-filter: blur(10px);
 ">
     <p style="font-size: 1.1rem; color: #AF52DE;">
-        Made with 💜 by your friendly AI — Premium Suite
+        Made with 💜 by your friendly AI
     </p>
     <p style="color: #999; font-size: 0.9rem;">
         Toggle settings from the left sidebar ⚙️ | For local mode, ensure Ollama is running
